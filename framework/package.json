@@ -1,0 +1,22 @@
+{
+  "name": "express-latte",
+  "version": "0.0.1-a",
+  "description": "A flexible and powerful CMS for Node.js, using the power of Express",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gretro/latte.git"
+  },
+  "keywords": [
+    "cms",
+    "typescript"
+  ],
+  "author": "Gabriel Lemire",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gretro/latte/issues"
+  },
+  "homepage": "https://github.com/gretro/latte#readme"
+}
