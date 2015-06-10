@@ -38,13 +38,12 @@ gulp.task('compile-ts-host', function() {
 			removeComments: true
 		}))
 		.pipe(sourceMaps.write('./', {
+			addComment: true,
 			includeContent: false,
-			sourceRoot: '../src/host/'
+			sourceRoot: '../src/host/',
+			includeContext: true
 		}))
 		.pipe(gulp.dest(tsDest));
-		
-	// gulp.src(tsHostFiles)
-	// 	.pipe(gulp.dest(tsDest));
 });
 
 gulp.task('build-ts-host', [ 'lint-ts-host', 'compile-ts-host' ]);
