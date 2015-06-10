@@ -2,7 +2,7 @@
   "name": "express-late-demo",
   "version": "0.0.1-a",
   "description": "A flexible and powerful CMS for Node.js, using the power of Express",
-  "main": "./host/app.js",
+  "main": "./www/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -25,11 +25,17 @@
   "homepage": "https://github.com/gretro/latte#readme",
   "devDependencies": {
     "express": "^4.12.4",
+    "glob": "^5.0.10",
     "gulp": "^3.9.0",
+    "gulp-sourcemaps": "^1.5.2",
     "gulp-task-listing": "^1.0.0",
+    "gulp-tsd": "0.0.4",
     "gulp-tslint": "^3.0.1-beta",
     "gulp-typescript": "^2.7.6",
     "gulp-watch": "^4.2.4",
     "tslint": "^2.2.0-beta"
+  },
+  "dependencies": {
+    "express": "^4.12.4"
   }
 }

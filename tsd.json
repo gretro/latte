@@ -1,0 +1,30 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "gulp-sourcemaps/gulp-sourcemaps.d.ts": {
+      "commit": "8b7cc13f6dbabd0a49de7ccba75c342160e600ad"
+    },
+    "gulp-tsd/gulp-tsd.d.ts": {
+      "commit": "8b7cc13f6dbabd0a49de7ccba75c342160e600ad"
+    },
+    "gulp-typescript/gulp-typescript.d.ts": {
+      "commit": "8b7cc13f6dbabd0a49de7ccba75c342160e600ad"
+    },
+    "gulp/gulp.d.ts": {
+      "commit": "8b7cc13f6dbabd0a49de7ccba75c342160e600ad"
+    },
+    "gulp-tslint/gulp-tslint.d.ts": {
+      "commit": "8b7cc13f6dbabd0a49de7ccba75c342160e600ad"
+    },
+    "node/node.d.ts": {
+      "commit": "8b7cc13f6dbabd0a49de7ccba75c342160e600ad"
+    },
+    "glob/glob.d.ts": {
+      "commit": "8b7cc13f6dbabd0a49de7ccba75c342160e600ad"
+    }
+  }
+}
