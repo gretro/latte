@@ -51,6 +51,14 @@ gulp.task('compile-ts-host', function () {
 
 gulp.task('build-ts-host', ['lint-ts-host', 'compile-ts-host']);
 
+gulp.task('clean-host', function() {
+	var clean = require('gulp-clean');
+	
+	gulp.src(tsHostDest, { read: false })
+		.pipe(debug({ title: 'clean-host' }))
+		.pipe(clean());
+});
+
 var tsLatteFiles = ['src/express-latte/**/*.ts', '!src/express-latte/typings/**/*.*'];
 var tsLatteDest = "./bin";
 
@@ -80,4 +88,14 @@ gulp.task('compile-ts-latte', function () {
 
 gulp.task('build-ts-latte', ['lint-ts-latte', 'compile-ts-latte']);
 
+gulp.task('clean-latte', function() {
+	var clean = require('gulp-clean');
+	
+	gulp.src(tsLatteDest, { read: false })
+		.pipe(debug({ title: 'clean-latte' }))
+		.pipe(clean());
+});
+
 gulp.task('build-ts', ['build-ts-latte', 'build-ts-host']);
+
+gulp.task('clean', ['clean-host', 'clean-latte']);
