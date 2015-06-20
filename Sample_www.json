@@ -1,0 +1,58 @@
+{
+	_id: "{ItemId}",
+	name: "Item1",
+	templateId: "{ItemID}",
+	path: {
+		fullPath: "/www/Item1",
+		parts: [
+			"/",
+			"content",
+			"www",
+			"Item1"
+		]
+	}
+	paths: [
+		{
+			culture: "en-CA",
+			fullPath: "/www/Item1",
+			parts: [
+				"/",
+				"content",
+				"www",
+				"Item1"
+			]
+		},
+		{
+			culture: "fr-CA",
+			fullPath: "/www/Item1",
+			parts: [
+				"/",
+				"content",
+				"www",
+				"Item1"
+			]
+		}
+	],
+	renderings: [
+		{
+			index: 0,
+			renderingId: "{ItemID}",
+			dataSource: "{ItemID}",
+			placeholder: "body"
+		},
+		{
+			index: 1,
+			renderingId: "{ItemID}",
+			dataSource: "{ItemID}",
+			placeholder: "footer"
+		}
+	],
+	fields: [
+		{
+			name: "displayName",
+			isSystem: true,
+			fieldId: "{ItemID}",
+			overridesDefaultValue: false
+		}
+	]
+}

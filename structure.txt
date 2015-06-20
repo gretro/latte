@@ -1,0 +1,11 @@
+/www
+/data
+/settings
+	/version
+	/languages
+/security
+	/users
+	/roles
+	/groups
+/templates
+	/system

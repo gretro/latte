@@ -18,5 +18,10 @@
   "bugs": {
     "url": "https://github.com/gretro/latte/issues"
   },
-  "homepage": "https://github.com/gretro/latte#readme"
+  "homepage": "https://github.com/gretro/latte#readme",
+  "dependencies": {
+    "cldr-data": "^27.0.5",
+    "globalize": "^1.0.0",
+    "mongodb": "^2.0.34"
+  }
 }

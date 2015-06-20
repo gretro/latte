@@ -7,7 +7,7 @@
     ],
     "tasks": [
         {
-            "taskName": "build-ts-host",
+            "taskName": "build-ts",
             "args": [],
             "isBuildCommand": true,
             "isWatching": false,
