@@ -1,3 +1,5 @@
+"use strict";
+
 /// <reference path="Path.ts" />
 import path = require('./Path');
 

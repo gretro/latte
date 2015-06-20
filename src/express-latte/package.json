@@ -1,6 +1,6 @@
 {
   "name": "express-latte",
-  "version": "0.0.1-a",
+  "version": "0.0.1-alpha",
   "description": "A flexible and powerful CMS for Node.js, using the power of Express",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

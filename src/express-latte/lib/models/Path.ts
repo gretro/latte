@@ -1,3 +1,5 @@
+"use strict";
+
 /// <reference path="../../typings/mongodb/mongodb.d.ts" />
 import mongo = require('mongodb');
 

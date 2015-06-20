@@ -1,28 +1,22 @@
 "use strict";
 /// <reference path="../../typings/mongodb/mongodb.d.ts" />
+/// <reference path="IItem" />
 /// <reference path="Path" />
 /// <reference path="LocalizedPath" />
 
+import itemInterface = require('./IItem');
 import mongo = require('mongodb');
 import path = require('./path');
 import localizedPath = require('./localizedPath');
 
-export interface IItem {
-	id: mongo.ObjectID;
-	name: string;
-	templateId: mongo.ObjectID;
-	path: path.Path;
-	paths: localizedPath.LocalizedPath[];
-};
-
-export class Item implements IItem {
+export class Item implements itemInterface.IItem {
 	private _id: mongo.ObjectID;
 	private _name: string;
 	private _templateId: mongo.ObjectID;
 	private _path: path.Path;
 	private _paths: localizedPath.LocalizedPath[];
 
-	constructor(base: IItem) {
+	constructor(base: itemInterface.IItem) {
 		if (!base) {
 			this._id = new mongo.ObjectID();
 		} else {
@@ -50,7 +44,7 @@ export class Item implements IItem {
 		return this._paths;
 	}
 
-	private copyFrom(base: IItem): void {
+	private copyFrom(base: itemInterface.IItem): void {
 		this._id = base.id;
 		this._name = base.name;
 		this._templateId = base.templateId;
